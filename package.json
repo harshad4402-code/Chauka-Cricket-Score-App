@@ -1,0 +1,10 @@
+{
+  "name": "chauka",
+  "version": "1.0.0",
+  "description": "Gully cricket scoring app",
+  "private": true,
+  "scripts": {
+    "start": "npm i express compression --no-save && node server.js"
+  },
+  "license": "MIT"
+}
