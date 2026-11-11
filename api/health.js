@@ -1,0 +1,1 @@
+module.exports = (req, res) => { res.setHeader('Cache-Control', 'no-store'); res.status(200).json({ ok: true, admin: !!process.env.ADMIN_KEY, storage: (process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL) ? 'redis' : 'none' }) };
